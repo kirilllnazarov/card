@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import { myTheme } from "../styles/animatiom/Theme.styled";
 
 type BtnReactComponent = {
+	marginLeft?: string;
 	color: string;
 	backgroundColor: string;
 	borderColor: string;
-	marginLeft?: string;
+
+	colorHover: string;
+	backgroundColorHower: string;
 };
 
 export const Btn = styled.button<BtnReactComponent>`
@@ -20,4 +24,9 @@ export const Btn = styled.button<BtnReactComponent>`
 	margin-left: ${(props) => props.marginLeft};
 	margin-top: 19px;
 	margin-bottom: 22px;
+
+	&:hover {
+		background-color: ${(props) => props.backgroundColorHower};
+		color: ${(props) => props.colorHover};
+	}
 `;

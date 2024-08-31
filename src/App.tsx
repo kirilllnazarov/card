@@ -19,7 +19,9 @@ function App() {
 				</Paragraph>
 				<Btn
 					color={myTheme.colors.buttonLeftText}
+					colorHover={myTheme.colors.colorLeftTextHover}
 					backgroundColor={myTheme.colors.buttonLeftColor}
+					backgroundColorHower={myTheme.colors.buttonLeftColorHower}
 					borderColor={myTheme.colors.borderColor}
 					marginLeft={"20px"}
 				>
@@ -27,7 +29,9 @@ function App() {
 				</Btn>
 				<Btn
 					color={myTheme.colors.buttoRightText}
+					colorHover={myTheme.colors.colorRightTextHover}
 					backgroundColor={myTheme.colors.buttonRightColor}
+					backgroundColorHower={myTheme.colors.buttonRightColorHower}
 					borderColor={myTheme.colors.borderColor}
 					marginLeft={"12px"}
 				>
@@ -45,4 +49,10 @@ const Box = styled.div`
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
+	button {
+		cursor: pointer;
+	}
+	img {
+		cursor: zoom-in;
+	}
 `;
