@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { myTheme } from "../styles/animatiom/Theme.styled";
 
 type BtnReactComponent = {
 	marginLeft?: string;
