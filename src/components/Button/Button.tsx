@@ -1,13 +1,12 @@
 import styled from "styled-components";
 
 type BtnReactComponent = {
-	marginLeft?: string;
 	color: string;
-	backgroundColor: string;
-	borderColor: string;
-
 	colorHover: string;
+	backgroundColor: string;
 	backgroundColorHower: string;
+	borderColor: string;
+	marginLeft?: string;
 };
 
 export const Btn = (props: BtnReactComponent) => {

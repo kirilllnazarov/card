@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { myTheme } from "../../styles/Theme.styled";
 import { Header } from "../Header/Header";
 import { Text } from "../Text/Text";
-// import { Btn } from "../Button/Button";
+import { Btn } from "../Button/Button";
 import { CardImage } from "../Images/Images";
 
 type CardType = {
