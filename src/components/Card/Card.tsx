@@ -1,7 +1,43 @@
 import styled from "styled-components";
-import { myTheme } from "../styles/animatiom/Theme.styled";
+import { myTheme } from "../../styles/Theme.styled";
+import { Header } from "../Header/Header";
+import { Text } from "../Text/Text";
+// import { Btn } from "../Button/Button";
+import { CardImage } from "../Images/Images";
 
-export const Card = styled.div`
+type CardType = {
+	picture: string;
+	header: string;
+	text: string;
+};
+
+export const Card = (props: CardType) => {
+return (
+	<CardStyle>
+	<CardImage picture={props.picture}/> 
+	<Header header={props.header} />
+	<Text textType={props.text} />
+	<Btn
+		color={myTheme.colors.buttonLeftText}
+		colorHover={myTheme.colors.colorLeftTextHover}
+		backgroundColor={myTheme.colors.buttonLeftColor}
+		backgroundColorHower={myTheme.colors.buttonLeftColorHower}
+		borderColor={myTheme.colors.borderColor}
+		marginLeft={"20px"}
+	/>
+	<Btn
+		color={myTheme.colors.buttoRightText}
+		colorHover={myTheme.colors.colorRightTextHover}
+		backgroundColor={myTheme.colors.buttonRightColor}
+		backgroundColorHower={myTheme.colors.buttonRightColorHower}
+		borderColor={myTheme.colors.borderColor}
+		marginLeft={"12px"}
+	/>
+</CardStyle>
+)
+};
+
+const CardStyle = styled.div`
 	width: 300px;
 	height: 350px;
 	border-radius: 15px;

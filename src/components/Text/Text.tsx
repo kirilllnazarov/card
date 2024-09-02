@@ -1,7 +1,17 @@
 import styled from "styled-components";
-import { myTheme } from "../styles/animatiom/Theme.styled";
+import { myTheme } from "../../styles/Theme.styled";
 
-export const Paragraph = styled.p`
+type TextProps = {
+	textType: string;
+};
+
+export const Text = (props: TextProps) => {
+	return (
+		<TextStyle>{props.textType}</TextStyle>
+	)
+};
+
+const TextStyle = styled.p`
 	color: ${myTheme.colors.paragraph || "red"};
 	font-size: 12px;
 	font-weight: 500;

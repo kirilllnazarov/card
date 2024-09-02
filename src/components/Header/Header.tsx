@@ -1,7 +1,17 @@
 import styled from "styled-components";
-import { myTheme } from "../styles/animatiom/Theme.styled";
+import { myTheme } from "../../styles/Theme.styled";
 
-export const Header = styled.h1`
+type HeaderType = {
+	header: string;
+};
+
+export const Header = (props: HeaderType) => {
+	return (
+		<HeaderStyle>{props.header}</HeaderStyle>
+	)
+};
+
+const HeaderStyle = styled.h2`
 	color: ${myTheme.colors.header || "red"};
 	width: 70px;
 	height: 19px;

@@ -10,7 +10,11 @@ type BtnReactComponent = {
 	backgroundColorHower: string;
 };
 
-export const Btn = styled.button<BtnReactComponent>`
+export const Btn = (props: BtnReactComponent) => {
+	return <BtnStyled></BtnStyled>;
+};
+
+const BtnStyled = styled.button<BtnReactComponent>`
 	font-size: 10px;
 	font-weight: 700;
 	width: 86px;
