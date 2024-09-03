@@ -6,11 +6,23 @@ type BtnReactComponent = {
 	backgroundColor: string;
 	backgroundColorHower: string;
 	borderColor: string;
-	marginLeft?: string;
+	marginLeft: string;
+children: string
 };
 
 export const Btn = (props: BtnReactComponent) => {
-	return <BtnStyled></BtnStyled>;
+	return (
+		<BtnStyled
+			color={props.color}
+			colorHover={props.colorHover}
+			backgroundColor={props.backgroundColor}
+			backgroundColorHower={props.backgroundColorHower}
+			borderColor={props.borderColor}
+			marginLeft={props.marginLeft}
+		>
+{props.children}
+		</BtnStyled>
+	);
 };
 
 const BtnStyled = styled.button<BtnReactComponent>`

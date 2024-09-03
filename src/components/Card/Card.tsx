@@ -12,29 +12,29 @@ type CardType = {
 };
 
 export const Card = (props: CardType) => {
-return (
-	<CardStyle>
-	<CardImage picture={props.picture}/> 
-	<Header header={props.header} />
-	<Text textType={props.text} />
-	<Btn
-		color={myTheme.colors.buttonLeftText}
-		colorHover={myTheme.colors.colorLeftTextHover}
-		backgroundColor={myTheme.colors.buttonLeftColor}
-		backgroundColorHower={myTheme.colors.buttonLeftColorHower}
-		borderColor={myTheme.colors.borderColor}
-		marginLeft={"20px"}
-	/>
-	<Btn
-		color={myTheme.colors.buttoRightText}
-		colorHover={myTheme.colors.colorRightTextHover}
-		backgroundColor={myTheme.colors.buttonRightColor}
-		backgroundColorHower={myTheme.colors.buttonRightColorHower}
-		borderColor={myTheme.colors.borderColor}
-		marginLeft={"12px"}
-	/>
-</CardStyle>
-)
+	return (
+		<CardStyle>
+			<CardImage picture={props.picture} />
+			<Header header={props.header} />
+			<Text textType={props.text} />
+			<Btn
+				color={myTheme.colors.buttonLeftText}
+				colorHover={myTheme.colors.colorLeftTextHover}
+				backgroundColor={myTheme.colors.buttonLeftColor}
+				backgroundColorHower={myTheme.colors.buttonLeftColorHower}
+				borderColor={myTheme.colors.borderColor}
+				marginLeft={"20px"}
+			>See more</Btn>
+			<Btn
+				color={myTheme.colors.buttoRightText}
+				colorHover={myTheme.colors.colorRightTextHover}
+				backgroundColor={myTheme.colors.buttonRightColor}
+				backgroundColorHower={myTheme.colors.buttonRightColorHower}
+				borderColor={myTheme.colors.borderColor}
+				marginLeft={"12px"}
+			>Save</Btn>
+		</CardStyle>
+	);
 };
 
 const CardStyle = styled.div`
