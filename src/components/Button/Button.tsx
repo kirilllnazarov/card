@@ -7,7 +7,7 @@ type BtnReactComponent = {
 	backgroundColorHower: string;
 	borderColor: string;
 	marginLeft: string;
-children: string
+	children: string;
 };
 
 export const Btn = (props: BtnReactComponent) => {
@@ -20,7 +20,7 @@ export const Btn = (props: BtnReactComponent) => {
 			borderColor={props.borderColor}
 			marginLeft={props.marginLeft}
 		>
-{props.children}
+			{props.children}
 		</BtnStyled>
 	);
 };
