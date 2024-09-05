@@ -11,6 +11,8 @@ function App() {
 				text={
 					"Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestieornare in venen"
 				}
+				btnLeft={"See more"}
+				btnRight={"Save"}
 			/>
 		</Box>
 	);

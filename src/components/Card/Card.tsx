@@ -9,6 +9,8 @@ type CardType = {
 	picture: string;
 	header: string;
 	text: string;
+	btnLeft: string;
+	btnRight: string;
 };
 
 export const Card = (props: CardType) => {
@@ -24,7 +26,9 @@ export const Card = (props: CardType) => {
 				backgroundColorHower={myTheme.colors.buttonLeftColorHower}
 				borderColor={myTheme.colors.borderColor}
 				marginLeft={"20px"}
-			>See more</Btn>
+			>
+				{props.btnLeft}
+			</Btn>
 			<Btn
 				color={myTheme.colors.buttoRightText}
 				colorHover={myTheme.colors.colorRightTextHover}
@@ -32,7 +36,9 @@ export const Card = (props: CardType) => {
 				backgroundColorHower={myTheme.colors.buttonRightColorHower}
 				borderColor={myTheme.colors.borderColor}
 				marginLeft={"12px"}
-			>Save</Btn>
+			>
+				{props.btnRight}
+			</Btn>
 		</CardStyle>
 	);
 };
